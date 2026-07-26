@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "question": "What are the greenhouse gas emission targets for GreenOps Inc?",
+    "type": "in_scope"
+  },
+  {
+    "id": 2,
+    "question": "What is the policy regarding generative AI verification?",
+    "type": "in_scope"
+  },
+  {
+    "id": 3,
+    "question": "What is the company policy for employee vacation leave?",
+    "type": "out_of_scope"
+  }
+]
+\# Sample Agent Runs
+
+
+
+\## Query 1: Greenhouse Gas Targets
+
+\*\*Input:\*\* `python agent1.py "What are the greenhouse gas emission targets for GreenOps Inc?"`
+
+\*\*Output:\*\*
+
+> According to the sustainability\_report.txt, GreenOps Inc. aims to cut direct greenhouse gas emissions by 45 percent by 2030 compared to 2020 baselines \[sustainability\_report.txt].
+
+
+
+\---
+
+
+
+\## Query 2: Out-of-Scope Guardrail Check
+
+\*\*Input:\*\* `python agent1.py "What is the policy for employee vacation leave?"`
+
+\*\*Output:\*\*
+
+> The provided source documents do not contain enough information to answer this question.
+
